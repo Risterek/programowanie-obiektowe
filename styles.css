@@ -4,8 +4,8 @@ body {
     background: linear-gradient(151deg, rgba(11,36,26,1) 0%, rgba(0,0,0,1) 100%);
     margin: 0;
     color: white;
-
 }
+
 /*header edit*/
 .header{
     display: flex;

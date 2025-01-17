@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(11,36,26);
+  background: linear-gradient(151deg, rgba(11,36,26,1) 0%, rgba(0,0,0,1) 100%);
+  margin: 0;
+  color: white;
+}
+
+.container{
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.textbox input{
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 0.5em;
+}
+
+.textbox input::placeholder{
+  color: white;
+}
+
+.btn{
+  width: 100%;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin: 12px 0;
+  background: rgb(0,220,130);
+  background: linear-gradient(45deg, rgba(0,220,130,1) 0%, rgba(0,214,126,1) 35%, rgba(116,255,199,1) 100%);
+}
+
+.btn:hover{
+  background: white;
+  color: black;
+}
