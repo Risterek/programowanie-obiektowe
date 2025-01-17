@@ -83,6 +83,18 @@ body {
     color: rgb(0, 0, 0);
 }
 
+#category{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.065);
+    color: white;
+    font-size: 1.2em;
+    justify-content: center;
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    -webkit-appearance: none;
+}
+
 /*calendar*/
 .calendar_container {
     height: 100%;
