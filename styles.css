@@ -27,21 +27,69 @@ body {
     color: rgb(0,220,130);
 }
 
-
 .container {
     padding: 5vh;
     display: flex;
+    flex-direction: raw;
     gap: 20px;
     height: 80vh;
 }
 
-/*calendar*/
-.calendar_container {
+.left_container{
     flex: 2;
     display: flex;
     flex-direction: column;
+}
+
+.right_container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*add cost*/
+.addCost_container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1em;
-    border-radius: 2em;
+    height: 4em;
+    margin-bottom: 1em;
+}
+
+.addCost_container input{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.065);
+    color: white;
+    font-size: 1.2em;
+    justify-content: center;
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.addCost_container button{
+    background: rgb(0,220,130);
+    background: linear-gradient(45deg, rgba(0,220,130,1) 0%, rgba(0,214,126,1) 35%, rgba(116,255,199,1) 100%);
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em 4em 0.5em 4em;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+/*calendar*/
+.calendar_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 1em;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2); 
 }
@@ -114,10 +162,10 @@ body {
 
 /*data bar*/
 .graph_container {
-    flex: 1;
     display: flex;
+    height: 100%;
     flex-direction: column;
-    border-radius: 2em;
+    border-radius: 1em;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1em;
@@ -129,7 +177,7 @@ body {
     flex-direction: column;
     background: rgb(0,220,130);
     background: linear-gradient(45deg, rgba(0,220,130,1) 0%, rgba(0,214,126,1) 35%, rgba(116,255,199,1) 100%);
-    border-radius: 1em;
+    border-radius: 0.5em;
     padding: 1em;
     filter: drop-shadow(0px 0px 15px rgba(0,220,130,0.5));
 }
@@ -165,5 +213,5 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 2;
     backdrop-filter: blur(5px);
-    border-radius: 2em;
+    border-radius: 1em;
 }
