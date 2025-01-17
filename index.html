@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planowanie budżetu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img id="logo" src="logo.png">
+        <span id="logout">Logout</span>
+    </div>
+
+
+    <div class="container">
+
+        <div class="popup_container">
+            <div class="monthYearDay" id="monthYearDay">12 Styczeń 2025</div>
+            <div class="add_cost">
+                <input type="text">
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                <button>Dodaj</button>
+
+            </div>
+            <div class="costs"></div>
+        </div>
+
+        <div class="calendar_container">
+            <div class="calendar_header">
+                <button id="previesBtn">
+                    <img src="chevron_left_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg">
+                </button>
+                <div class="monthYear" id="monthYear"></div>
+                <button id="nextBtn">
+                    <img src="chevron_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg">
+                </button>
+            </div>
+
+            <div class="days">
+                <div class="day">Pon</div>
+                <div class="day">Wt</div>
+                <div class="day">Śr</div>
+                <div class="day">Czw</div>
+                <div class="day">Pt</div>
+                <div class="day">Sob</div>
+                <div class="day">niedz</div>
+            </div>
+            <div class="dates" id="dates"></div>
+        </div>
+        
+        <div class="graph_container">
+            <div class="fiance_summary">
+                <span class="text1">Wydatki w tym miesiącu</span>
+                <div class="full_spend">
+                    <span id="Spending">6000</span>
+                    <span id="curency">zł</span>
+                </div>
+                <div class="compa_previes">+2,4%</div>
+            </div>
+            <div class="finance_graph"></div>
+        </div>
+    </div>
+</body>
+
+<script src="calendar_main.js">
+</script>
+</html>
