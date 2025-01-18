@@ -146,7 +146,6 @@ body {
 .day{
     text-align: center;
     padding: 5px;
-
 }
 
 .dates{
@@ -214,16 +213,81 @@ body {
     flex: 2;
 }
 
-/*popup*/
-.popup_container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60vw;
-    height: 60vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2;
-    backdrop-filter: blur(5px);
-    border-radius: 1em;
+/*graph*/
+
+.graph{
+    height: 1.5em;
+    background-color: #ffffff1e;
+    display: flex;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.jedzenieGraph{
+    background-color: #175131;
+    flex: 1;
+}
+
+.ubraniaGraph{
+    background-color: #D9EDDF;
+    flex: 1;
+}
+
+.rozrywkaGraph{
+    background-color: #386C5F;
+    flex: 1;
+}
+
+.rachunkiGraph{
+    background-color: #00DC82;
+    flex: 1;
+}
+
+.inneGraph{
+    background-color: #ffffff31;
+    flex: 1;
+}
+
+.jedzenieGraph:hover::after{
+    content: attr(title);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ubraniaGraph:hover::after{
+    content: attr(title);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.rozrywkaGraph:hover::after{
+    content: attr(title);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.rachunkiGraph:hover::after{
+    content: attr(title);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.inneGraph:hover::after{
+    content: attr(title);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
