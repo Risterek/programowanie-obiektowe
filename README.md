@@ -1,4 +1,5 @@
 # Budżet osobisty - aplikacja do zarządzania wydatkami
+JanKinal1_MaksymilianRichter2_I_USM_Inf_NW_1_BudżetDomowy
 
 ## Demo online
 Działającą wersję aplikacji można podejrzeć pod adresem: https://budzet.kinal.pl
